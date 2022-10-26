@@ -1,0 +1,314 @@
+@font-face {
+    font-family: roboto-oh5;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/roboto-regular-webfont.woff2) format("woff2");
+}
+@font-face {
+    font-family: roboto-oh5;
+    font-style: italic;
+    font-weight: 400;
+    src: url(../fonts/roboto-italic-webfont.woff2) format("woff2");
+}
+@font-face {
+    font-family: roboto-oh5;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/roboto-bold-webfont.woff2) format("woff2");
+}
+@font-face {
+    font-family: roboto-oh5;
+    font-style: italic;
+    font-weight: 700;
+    src: url(../fonts/roboto-bolditalic-webfont.woff2) format("woff2");
+}
+::-webkit-input-placeholder {
+    color: #666;
+}
+::-moz-placeholder {
+    color: #666;
+}
+:-ms-input-placeholder {
+    color: #666;
+}
+::-ms-input-placeholder {
+    color: #666;
+}
+::placeholder {
+    color: #666;
+}
+::-moz-selection {
+    background-color: orange;
+    color: #fff;
+}
+::selection {
+    background-color: orange;
+    color: #fff;
+}
+input,
+textarea {
+    outline: none;
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+    border-color: red;
+}
+input:required:valid,
+textarea:required:valid {
+    border-color: green;
+}
+body {
+    color: #333;
+    font-family: roboto-oh5, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+}
+body,
+h1 {
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 14px;
+    line-height: 45px;
+}
+a {
+    text-decoration: none;
+}
+.divider {
+    border-bottom: 2px dashed #e7e7e7;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.divider:last-child {
+    display: none;
+}
+.top-line {
+    background-color: #455a64;
+    color: #fff;
+    height: 45px;
+}
+.top-line-header {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #e6e6e6;
+    height: 60px;
+    overflow: hidden;
+}
+.custom-btn {
+    background-color: #455a64;
+    border: none;
+    border-radius: 8px;
+    color: #e7e7e7;
+    padding: 5px 10px;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.custom-btn:hover {
+    background-color: #536d79;
+}
+.logo {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+.logo .logo-icon {
+    background-color: #455a64;
+    border-radius: 7px;
+    color: #fff;
+    height: 33px;
+    text-align: center;
+    width: 33px;
+}
+.logo .logo-icon i {
+    font-size: 24px;
+    line-height: 33px;
+}
+.logo h2 {
+    color: #455a64;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    margin-left: 8px;
+}
+.combined-button {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    border-radius: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 190px;
+}
+.combined-button i {
+    font-size: 18px;
+}
+.combined-button button {
+    border-radius: 0;
+    height: 33px;
+    line-height: 35px;
+}
+.combined-button .new-device-button {
+    padding: 0 9px;
+}
+.combined-button .new-device-button i {
+    margin-right: 7px;
+}
+.combined-button .more-button {
+    line-height: 33px;
+    padding: 1px 6px;
+    width: 33px;
+}
+.combined-button .dropdown-toggle i {
+    font-size: 22px;
+}
+.status-bar {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #e6e6e6;
+    height: 33px;
+}
+.status-bar #days {
+    float: left;
+}
+.status-bar #days ul {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 280px;
+}
+.status-bar #days ul li {
+    color: #455a64;
+    display: list-item;
+    float: left;
+    margin-right: 5px;
+}
+.status-bar #days ul li a {
+    color: #455a64;
+}
+.status-bar #days ul li a:hover {
+    color: #304149;
+}
+#planner {
+    border: 2px solid #e7e7e7;
+    border-top: none;
+    width: 100%;
+}
+#planner .icon {
+    height: 50px;
+    margin: 25px 5px 25px 25px;
+    width: 50px;
+}
+#planner .icon img {
+    width: 100%;
+}
+#planner .description {
+    color: #455a64;
+    line-height: 20px;
+}
+#planner .description h6 {
+    font-weight: 600;
+}
+#planner .grid {
+    -ms-grid-columns: (1fr) [24];
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    height: 100%;
+    margin-right: 25px;
+    margin-top: 3px;
+    overflow: overlay;
+    padding: 2px;
+}
+#planner .grid .grid-col {
+    min-width: 40px;
+}
+#planner .grid .grid-col .grid-col-main {
+    cursor: pointer;
+    height: 52px;
+    outline: 1px solid #e7e7e7;
+}
+#planner .grid .grid-col .grid-col-main .fill-block {
+    height: 40px;
+    width: 100%;
+    z-index: 1;
+}
+#planner .grid .grid-col .grid-col-main .fill-block-active {
+    background-color: #455a64;
+}
+#planner .grid .grid-col .grid-col-main .fill-block-first {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+#planner .grid .grid-col .grid-col-main .fill-block-last {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#planner .grid .grid-col .grid-col-footer {
+    color: #aaa;
+    font-size: 14px;
+    text-align: center;
+}
+@media only screen and (max-width: 991px) {
+    #planner .description,
+    #planner .description h6 {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .status-bar #days {
+        float: none;
+    }
+    .status-bar #days ul {
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .logo {
+        margin: 0 auto;
+    }
+    .combined-button {
+        float: none;
+        margin: 0 auto;
+    }
+    .top-line-header {
+        height: 100px;
+    }
+    #planner .description {
+        margin: 25px;
+    }
+    #planner .icon {
+        display: none;
+    }
+}
+@media only screen and (max-width: 419px) {
+    #planner .description {
+        margin-left: 10px;
+    }
+    #planner .grid {
+        margin-right: 10px;
+    }
+}
